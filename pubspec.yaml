@@ -1,9 +1,6 @@
 name: budget_project
 description: "A new Flutter project."
-
 publish_to: 'none' 
-
-
 version: 1.0.0+1
 
 environment:
@@ -13,10 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-
-  
   cupertino_icons: ^1.0.8
+  fl_chart: ^0.69.0
+  font_awesome_flutter: ^10.8.0
 
 dev_dependencies:
   flutter_test:
