@@ -144,6 +144,7 @@ Widget getTiles(double value, TitleMeta meta) {
   }
 
   Widget leftTitles(double value, TitleMeta meta) {
+    // ignore: constant_identifier_names
     const Style = TextStyle(
       color: Colors.grey,
       fontWeight: FontWeight.bold,

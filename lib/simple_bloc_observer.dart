@@ -15,8 +15,8 @@ class SimpleBlocObserver extends BlocObserver{
       log('onEvent -- bloc: ${bloc.runtimeType}, event: $event');
     }
     @override
-    void onChange(BlocBase bloc, Change event) {
-      super.onChange(bloc, event);
+    void onChange(BlocBase bloc, Change change) {
+      super.onChange(bloc, change);
       log('onChange -- bloc: ${bloc.runtimeType}, change: $change');
     }
 
@@ -27,8 +27,7 @@ class SimpleBlocObserver extends BlocObserver{
     }
 
   @override
-  // ignore: avoid_renaming_method_parameters
-  void onError(BlocBase bloc, Object error, StackTrace stacktrace) {
+  void onError(BlocBase bloc, Object error, StackTrace stackTrace) {
       log('onError -- bloc: ${bloc.runtimeType}, error: $error');
       super.onError(bloc, error, stackTrace);
   }
